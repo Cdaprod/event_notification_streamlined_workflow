@@ -2,7 +2,8 @@ version: '3.8'
 services:
   flaskapp:
     build:
-      context: ./src/flask
+      context: ./apps/flask
+      dockerfile: Dockerfile
     ports:
       - "5000:5000"
     depends_on:
